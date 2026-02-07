@@ -64,13 +64,13 @@ export default function Hero() {
                         className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10"
                     >
                         <Link href="#portfolio">
-                            <Button size="lg" className="w-full md:w-64 group">
+                            <Button size="lg" className="w-64 group">
                                 事業内容を見る
                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
                         <Link href="#contact">
-                            <Button variant="outline" size="lg" className="w-full md:w-64">
+                            <Button variant="outline" size="lg" className="w-64">
                                 お問い合わせ
                             </Button>
                         </Link>
