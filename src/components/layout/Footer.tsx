@@ -46,7 +46,7 @@ export default function Footer() {
                             <li className="text-gray-400 text-sm italic">"Craft Your Future"</li>
                             <li className="text-gray-500 text-[10px] leading-relaxed">
                                 アナログな手仕事、デジタルの創造性。<br />
-                                境界なき表現を市原から世界へ。
+                                境界なき表現を、まだ見ぬ未来へ。
                             </li>
                         </ul>
                     </div>
