@@ -35,7 +35,7 @@ const projects = [
         title: "GENS ICHIHARA",
         category: "Sports Management",
         categoryColor: "text-gold",
-        description: <>千葉県フットサルリーグに参戦するフットサルクラブの運営。<br />「本気の先へ」を掲げ、スポーツを通じた地域活性化と夢の実現をサポートします。練習試合、練習参加お問い合わせください。</>,
+        description: <>千葉県フットサルリーグに参戦するフットサルクラブの運営。<br />「本気の先へ」を掲げ、スポーツを通じた地域活性化と貴方の夢の実現をサポートします。</>,
         color: "from-red-950 via-red-800 to-red-950",
         tags: ["Futsal Club", "Community", "Victory"],
         emblem: "/assets/logos/gens_emblem01.png",

@@ -51,7 +51,7 @@ const works = [
         title: "GENS ICHIHARA",
         subtitle: "Sports Management",
         titleColor: "text-white",
-        description: "千葉県フットサルリーグに参戦するフットサルクラブの運営。「本気の先へ」を掲げ、スポーツを通じた地域活性化と夢の実現をサポートします。練習試合、練習参加お問い合わせください。",
+        description: "千葉県フットサルリーグに参戦するフットサルクラブの運営。「本気の先へ」を掲げ、スポーツを通じた地域活性化と貴方の夢の実現をサポートします。",
         achievements: [
             "Swith Zero,Fight Hard.",
             "献身・誠実・尊重・感謝",
