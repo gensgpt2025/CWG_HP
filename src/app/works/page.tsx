@@ -32,7 +32,7 @@ const works = [
         title: "Create Web GENS",
         subtitle: "Digital Creative & Operation",
         titleColor: "text-white",
-        description: "お気軽にお問い合わせください。",
+        description: "WEBデザイン、システム開発、SNS運用代行からAI活用コンサルティングまで。最新技術とクリエイティブを融合させ、ビジネスの可能性を最大化します。お気軽にお問い合わせください。",
         achievements: [
             "デジタルコンテンツ作成",
             "WEBデザイン",
@@ -51,7 +51,7 @@ const works = [
         title: "GENS ICHIHARA",
         subtitle: "Sports Management",
         titleColor: "text-white",
-        description: "千葉県フットサルリーグ参戦中",
+        description: "千葉県フットサルリーグに参戦するフットサルクラブの運営。「本気の先へ」を掲げ、スポーツを通じた地域活性化と夢の実現をサポートします。練習試合、練習参加お問い合わせください。",
         achievements: [
             "Swith Zero,Fight Hard.",
             "献身・誠実・尊重・感謝",
