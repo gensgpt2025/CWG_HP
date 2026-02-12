@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
-import { ExternalLink, Instagram, ShoppingBag, Youtube, Twitter, Globe } from "lucide-react";
+import { ExternalLink, Instagram, ShoppingBag, Youtube, Twitter, Globe, Music } from "lucide-react";
 import Gallery from "@/components/ui/Gallery";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -43,6 +43,7 @@ const works = [
         links: [
             { name: "FC Lazo Instagram", url: "https://www.instagram.com/fc_lazo_official/", icon: Instagram },
             { name: "YouTube", url: "https://youtu.be/dPBSMz2e9Zw?si=3VW9QbSvbQ-E-h8Y", icon: Youtube },
+            { name: "Suno", url: "https://suno.com/@cwg_gens", icon: Music },
         ]
     },
     {
