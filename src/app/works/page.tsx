@@ -42,6 +42,7 @@ const works = [
         emblem: "/assets/logos/cwg_emblem.png",
         links: [
             { name: "FC Lazo Instagram", url: "https://www.instagram.com/fc_lazo_official/", icon: Instagram },
+            { name: "YouTube", url: "https://youtu.be/dPBSMz2e9Zw?si=3VW9QbSvbQ-E-h8Y", icon: Youtube },
         ]
     },
     {
