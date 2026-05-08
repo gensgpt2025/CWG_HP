@@ -20,8 +20,9 @@ const works = [
             "布製品",
             "オリジナルグッズ"
         ],
-        color: "from-[#F5F5DC] via-[#EADCB8] to-[#D4AF37]",
-        emblem: "/assets/logos/cag_emblem02.png",
+        color: "from-[#b56214] via-[#db7c1f] to-[#f09635]",
+        emblem: "/assets/logos/chatora_transparent.png",
+        emblemClass: "w-4/5 h-4/5",
         links: [
             { name: "Instagram", url: "https://www.instagram.com/chatora_atelier_gens/", icon: Instagram },
             { name: "Online Shop", url: "/coming-soon", icon: ShoppingBag },
@@ -40,6 +41,7 @@ const works = [
         ],
         color: "from-neon-cyan to-blue-600",
         emblem: "/assets/logos/cwg_emblem.png",
+        emblemClass: "w-full h-full",
         links: [
             { name: "FC Lazo Instagram", url: "https://www.instagram.com/fc_lazo_official/", icon: Instagram },
             { name: "YouTube", url: "https://youtu.be/dPBSMz2e9Zw?si=3VW9QbSvbQ-E-h8Y", icon: Youtube },
@@ -59,6 +61,7 @@ const works = [
         ],
         color: "from-red-950 via-red-800 to-red-950",
         emblem: "/assets/logos/gens_emblem01.png",
+        emblemClass: "w-full h-full",
         links: [
             { name: "Official Website", url: "https://gensichihara.cwgworks.com/", icon: Globe },
             { name: "Instagram", url: "https://www.instagram.com/gens_ichihara_futsal/", icon: Instagram },
@@ -113,14 +116,13 @@ export default function Works() {
                                         <div className={`absolute inset-0 bg-gradient-to-br ${work.color} opacity-80 mix-blend-multiply`} />
                                         <div className="absolute inset-0 flex items-center justify-center p-8">
                                             {work.emblem ? (
-                                                <div className="relative w-full h-full rounded-2xl overflow-hidden drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+                                                <div className={`relative ${work.emblemClass} rounded-2xl overflow-hidden drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]`}>
                                                     <Image
                                                         src={work.emblem}
                                                         alt={`${work.title} Emblem`}
                                                         fill
                                                         className={cn(
-                                                            "object-contain",
-                                                            work.id === "atelier" && "mix-blend-lighten"
+                                                            "object-contain"
                                                         )}
                                                     />
                                                 </div>

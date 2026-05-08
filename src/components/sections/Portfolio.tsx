@@ -14,9 +14,10 @@ const projects = [
         category: "Handmade Crafts",
         categoryColor: "text-gold",
         description: <>革・布小物・オリジナルグッズの企画・製作・販売。<br />手仕事ならではの温もりと「一生もの」の品質を追求し、貴方だけのたからものを創り上げます。</>,
-        color: "from-[#F5F5DC] via-[#EADCB8] to-[#D4AF37]",
+        color: "from-[#b56214] via-[#db7c1f] to-[#f09635]",
         tags: ["Leather Craft", "Custom Made", "Artisan"],
-        emblem: "/assets/logos/cag_emblem02.png",
+        emblem: "/assets/logos/chatora_transparent.png",
+        emblemSize: "w-48 h-48 md:w-56 md:h-56",
         href: "#",
     },
     {
@@ -28,6 +29,7 @@ const projects = [
         color: "from-neon-cyan to-blue-600",
         tags: ["Web Design", "AI Integration", "Marketing"],
         emblem: "/assets/logos/cwg_emblem.png",
+        emblemSize: "w-48 h-48 md:w-56 md:h-56",
         href: "https://www.instagram.com/fc_lazo_official/",
     },
     {
@@ -39,6 +41,7 @@ const projects = [
         color: "from-red-950 via-red-800 to-red-950",
         tags: ["Futsal Club", "Community", "Victory"],
         emblem: "/assets/logos/gens_emblem01.png",
+        emblemSize: "w-[173px] h-[173px] md:w-[202px] md:h-[202px]",
         href: "https://gensichihara.cwgworks.com/",
     },
 ];
@@ -75,14 +78,13 @@ export default function Portfolio() {
                             <div className="h-48 w-full relative overflow-hidden bg-white/5">
                                 <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-80 group-hover:scale-105 transition-transform duration-500 z-0`} />
                                 <div className="absolute inset-0 flex items-center justify-center p-6 z-10">
-                                    <div className="relative w-32 h-32 transform group-hover:scale-110 transition-transform duration-500">
+                                    <div className={`relative ${project.emblemSize} transform group-hover:scale-110 transition-transform duration-500`}>
                                         <Image
                                             src={project.emblem}
                                             alt={project.title}
                                             fill
                                             className={cn(
-                                                "object-contain",
-                                                project.id === 1 && "mix-blend-lighten"
+                                                "object-contain"
                                             )}
                                         />
                                     </div>
