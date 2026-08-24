@@ -30,8 +30,8 @@ export async function POST(request: Request) {
         }
 
         const result = await resend.emails.send({
-            from: 'CWG Website <onboarding@resend.dev>',
-            to: 'gensgpt2025@gmail.com',
+            from: 'CWG Website <noreply@cwgworks.com>',
+            to: 'gens@cwgworks.com',
             subject: `【お問い合わせ】${firstName} ${lastName}様より`,
             replyTo: email,
             html: `
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
             let errorMessage = 'メッセージの送信に失敗しました。';
 
             if (resendError.name === 'forbidden' || resendError.statusCode === 403) {
-                errorMessage = '【運用制限】ResendのSandboxモードにより、登録済みアドレス以外への送信が制限されています。';
+                errorMessage = 'メール送信が拒否されました。送信ドメインの認証設定を確認してください。';
             }
 
             return NextResponse.json({ success: false, error: errorMessage }, { status: resendError.statusCode || 400 });
