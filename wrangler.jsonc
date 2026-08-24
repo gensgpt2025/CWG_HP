@@ -1,0 +1,17 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "cwg-hp",
+	"compatibility_date": "2026-08-23",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	// next/image を Cloudflare 側で最適化する（src 内 5 ファイルで使用）
+	"images": {
+		"binding": "IMAGES"
+	}
+	// ISR は未使用のため R2 インクリメンタルキャッシュと
+	// WORKER_SELF_REFERENCE は入れていない。ISR を使い始めたら追加すること。
+}
